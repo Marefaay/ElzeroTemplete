@@ -1,0 +1,695 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --main_color: #10cab7;
+    --second-color: #00000093;
+    --third-color: #0000001c;
+    --footer-color: #2c4755;
+}
+
+.header {
+    width: 100%;
+}
+
+.header .contanier {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+.header {
+    background-color: #ffffff4f;
+    box-shadow: 0px 0px 5px 3px #0000003d;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header .links {
+    position: relative;
+}
+
+.header .links .icon {
+    width: 30px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+
+}
+
+.header .links:hover .icon span:nth-child(2) {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.header .icon span {
+    background-color: black;
+    height: 2px;
+    margin-bottom: 4px;
+}
+
+.header .icon span:first-child {
+    width: 100%;
+}
+
+.header .icon span:nth-child(2) {
+    width: 50%;
+}
+
+
+.header .icon span:last-child {
+    width: 100%;
+}
+
+.header .logo {
+    width: 90px;
+}
+
+.header .contanier ul {
+    list-style: none;
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    background-color: #fff;
+    width: 300px;
+    text-align: center;
+    height: 310px;
+    box-shadow: 10px 11px 29px 2px #69686891;
+    display: none;
+    z-index: 1;
+}
+
+.header .contanier ul ::before {
+    content: "";
+
+    border-color: transparent transparent #fff transparent;
+    border-width: 15px;
+    border-style: solid;
+    position: absolute;
+    top: -30px;
+    right: 1px;
+
+}
+
+.header .contanier ul li a {
+    text-decoration: none;
+    color: #696868ee;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: bold;
+
+}
+
+.header .contanier ul li {
+    margin-bottom: 15px;
+    width: auto;
+    transition: 0.3s;
+    padding: 15px 0;
+
+
+}
+
+.header .contanier ul li:hover {
+    border-left: 5px solid blue;
+    background-color: #eee;
+    color: #000;
+}
+
+.header .contanier ul li:hover a {
+    color: #000;
+}
+
+
+.header .links:hover ul {
+    display: block;
+}
+
+.land {
+    margin: 0;
+    background-image: url(../images/Denali-mountain_2x1.avif);
+    height: calc(100vh - 76px);
+    background-color: #00000093;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.land .text {
+
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50px, -50px);
+    text-transform: capitalize;
+    text-align: center;
+    width: 20%;
+    max-width: 100%;
+}
+
+.land .text h1 {
+    font-weight: 900;
+    font-size: 30px;
+    color: var(--main_color);
+}
+
+.land .text p {
+
+
+    line-height: 25px;
+    color: #fff;
+}
+
+.underland {
+    display: flex;
+    justify-content: space-evenly;
+    /* padding: 50px; */
+    padding: 50px 0;
+}
+
+.underland .card1,
+.underland .card2,
+.underland .card3 {
+    text-align: center;
+    padding: 20px;
+    width: 33.3%;
+}
+
+.card1 .fa-regular,
+.card2 .fa-solid,
+.card3 .fa-solid {
+    color: var(--main_color);
+    line-height: 1.8;
+    font-size: 25px;
+}
+
+.card1 h2,
+.card2 h2,
+.card3 h2 {
+    line-height: 1.9;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.card1 p,
+.card2 p,
+.card3 p {
+    /* width: 250px; */
+    text-align: center;
+    font-size: 15px;
+    color: var(--second-color);
+}
+
+.card2 {
+    box-shadow: rgb(0 0 0 / 35%) 0 0 25px -4px;
+}
+
+.services {
+    width: 100%;
+}
+
+.services .heading {
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 80px;
+    text-transform: capitalize;
+}
+
+.services .heading h1 {
+    color: var(--third-color);
+    font-size: 80px;
+}
+
+.services .heading h3 {
+    color: var(--second-color);
+    font-size: 17px;
+    margin-top: -30px;
+}
+
+.services .contanier {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.contanier i {
+    color: var(--main_color);
+    margin: -100px 20px 0 20px;
+    font-size: 25px;
+}
+
+.serv1 h2,
+.serv2 h2,
+.serv3 h2,
+.serv4 h2 {
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height: 2.4;
+}
+
+.serv1 p,
+.serv2 p,
+.serv3 p,
+.serv4 p {
+    width: 300px;
+    line-height: 1.6;
+    color: var(--second-color);
+    font-size: 15px;
+
+}
+
+.ser .s1,
+.ser .s2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+
+
+.portoflio {
+    background-color: var(--third-color);
+    padding: 30px 0px;
+    width: 100%;
+}
+
+.portoflio.heading h1 {
+    color: var(--third-color);
+    font-size: 80px;
+}
+
+.portoflio .heading h3 {
+    color: var(--second-color);
+    font-size: 17px;
+    /* margin-top: -47px; */
+}
+
+.portoflio .heading {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding-bottom: 30px; */
+    /* padding: 50px; */
+    
+}
+.projects .pro1,
+.projects .pro2,
+.projects .pro3{
+    /* width:33.3%; */
+    margin-left: 20px;
+}
+
+.projects img {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.pro1 h4,
+.pro2 h4,
+.pro3 h4 {
+    text-transform: capitalize;
+    line-height: 1.8;
+}
+
+.pro1 p,
+.pro2 p,
+.pro3 p {
+    text-transform: capitalize;
+    color: var(--second-color);
+}
+
+.projects .txt {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.about {
+    padding: 10px;
+}
+
+.about .heading {
+    text-align: center;
+}
+
+.about .heading h1 {
+    color: var(--third-color);
+    font-size: 80px;
+}
+
+.about .heading h3 {
+    color: var(--second-color);
+    font-size: 17px;
+    margin-top: -30px;
+}
+
+.about .first {
+    position: relative;
+}
+
+.about .first::after {
+    content: "";
+    width: 60px;
+    position: absolute;
+    left: 224px;
+    top: -14px;
+    height: 139px;
+    border-left: 25px solid green;
+    border-bottom: 24px solid green;
+    z-index: -1;
+
+}
+
+.about .first::before {
+    content: "";
+    background-color: var(--second-color);
+    position: absolute;
+    left: -14px;
+    top: -16px;
+    width: 32px;
+    height: 160px;
+    z-index: -1;
+}
+
+.second span {
+
+    background-color: green;
+    width: 100px;
+    display: block;
+    height: 3px;
+    margin: 10px 0;
+}
+
+.about .d {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.second p {
+    width: 300px;
+
+
+}
+
+.second p:first-child {
+    color: var(--second-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.second p:last-child {
+    font-size: 15px;
+}
+
+.contact {
+    background-color: var(--third-color);
+    padding: 20px 0;
+}
+
+.contact .heading {
+    text-align: center;
+}
+
+.contact .heading h1 {
+    color: var(--third-color);
+    font-size: 80px;
+}
+
+.contact .heading h3 {
+    color: var(--second-color);
+    font-size: 17px;
+    margin-top: -30px;
+}
+
+.contact .tx p:first-child {
+    color: var(--footer-color);
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+
+.contact .info p:first-child {
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.contact .tx {
+    text-align: center;
+}
+
+.contact .tx p:first-child {
+    /* margin-bottom: 10px; */
+    line-height: 1.8;
+}
+
+.contact .tx a {
+    text-decoration: none;
+    color: var(--main_color);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1.8;
+}
+
+.contact .tx a:hover {
+    color: var(--footer-color);
+    transition: 0.3s;
+
+}
+
+.contact .tx .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact .info #f {
+    color: blue;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.contact .info #i {
+    color: orangered;
+    margin: 0 15px;
+}
+
+.contact .info #t {
+    color: blue;
+}
+
+.contact .info #f:hover,
+.contact .info #i:hover,
+.contact .info #t:hover {
+    /* transform: scale(1.5); */
+    /* transition: 0.3s; */
+    animation-name: move;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    0% {
+        scale: 1.2;
+    }
+
+    100% {
+        scale: 1.5;
+
+    }
+
+}
+
+.footer {
+    height: 50px;
+
+    background-color: var(--footer-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--main_color);
+}
+
+.footer a:hover {
+    color: #fff;
+    transition: 0.5s;
+}
+
+@media screen and (max-width:768px) {
+    .header {
+        position: sticky;
+        top: 0;
+    }
+
+    .land .text {
+        width: 60%;
+        left: 30%;
+    }
+
+    .underland {
+        flex-direction: column;
+        padding: 0 50px;
+        
+
+    }
+    .underland .card1,
+    .underland .card2,
+    .underland .card3{
+        width: 100%;
+    }
+
+    .services .heading h1 {
+        font-size: 60px;
+
+    }
+
+    .services .heading h3 {
+        font-size: 14px;
+    }
+
+    .contanier .ser .s1,
+    .contanier .ser .s2 {
+        flex-direction: column;
+        /* padding: 50px 0; */
+        text-align: center;
+    }
+
+    .serv1,
+    .serv2,
+    .serv3 {
+        margin-bottom: 50%;
+    }
+
+    .portoflio .heading h1 {
+        font-size: 60px;
+    }
+
+    .portoflio .heading h3 {
+        font-size: 14px;
+        margin-top: -34px;
+    }
+
+    .portoflio .projects {
+        flex-direction: column;
+
+    }
+
+    .portoflio .projects .pro2 {
+        margin: 50px;
+    }
+
+    .about .heading {
+        margin-bottom: 40px;
+        ;
+    }
+
+    .about .heading h1 {
+        font-size: 60px;
+
+    }
+
+    .about .heading h3 {
+        font-size: 14px;
+    }
+
+    .about .d {
+        flex-direction: column;
+    }
+
+    .about .d .first img {
+        width: 200px;
+    }
+
+    .about .d .first::after {
+        left: 90%;
+        bottom: 80%;
+    }
+
+    .about .d .first {
+        margin-right: 20px;
+        margin-bottom: 50px;
+    }
+
+    .contact .heading h1 {
+        font-size: 60px;
+    }
+
+    .contact .heading h3 {
+        font-size: 14px;
+    }
+
+    .contact .heading {
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    .contact .tx p:first-child {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .contact .tx a {
+        font-size: 18px;
+    }
+
+    .footer {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .land {
+        width: 100%
+    }
+
+    .land .text {
+        font-size: 30px;
+        width: 50%;
+        left: 30%;
+    }
+
+    .land .text p {
+        font-size: 20px;
+    }
+
+    
+    
+}
+
